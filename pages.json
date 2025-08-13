@@ -1,0 +1,42 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	 // 公共页面
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "users",
+			// 用户分包
+			"pages": [{
+				"path": "home/home",
+				"style": {
+					"navigationBarTitleText": "用户"
+				}
+			}]
+		},
+		{
+			"root": "provider",
+			// 服务商分包
+			"pages": [{
+				"path": "dashboard/dashboard",
+				"style": {
+					"navigationBarTitleText": "服务商"
+				}
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
